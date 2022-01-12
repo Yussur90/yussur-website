@@ -10,7 +10,7 @@ mongoose.set("useNewUrlParser", true);
 mongoose.set("useFindAndModify", false);
 mongoose.set("useCreateIndex", true);
 
-const port = 3031;
+const port = process.env.PORT ||3031;
 const config = require("./config");
 
 const postsRouter = require("./routes/posts");
