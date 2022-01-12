@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
   useEffect(() => {
     console.log("loo");
-    axios.get("https://yussuralani.herokuapp.com/posts/list").then((res) => {
+    axios.get("/posts/list").then((res) => {
       console.log(res);
     });
   }, []);
